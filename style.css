@@ -1,0 +1,157 @@
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/*Button Light/dark mode*/
+.mode {
+  width: 50px;
+  border-radius: 20px;
+  background-color: #ffff;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-top: 10px;
+}
+.mode img {
+  width: 20px;
+}
+
+.mode .mode-2 {
+  display: none;
+}
+
+/*Background*/
+.circle {
+  background-color: #1d232a;
+  position: fixed;
+  z-index: -1;
+  margin-right: -15vh;
+  margin-top: -15vh;
+  transition: 0.3s ease;
+}
+
+/*Search*/
+.col {
+  justify-content: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 80vh;
+}
+.search-container {
+  padding: 15px;
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  transition: 0.4s ease;
+}
+.form-search input {
+  padding: 10px;
+  width: 100%;
+  height: 40px;
+  margin-bottom: 20px;
+}
+
+.form-search button {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.form-search button:hover {
+  background-color: #007bff;
+  color: black;
+}
+
+.images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.images img {
+  position: absolute;
+  max-width: 200px;
+  height: 300px;
+  border-radius: 20px;
+  object-fit: cover;
+  transition: 0.3s ease;
+}
+.image-1 {
+  z-index: 3;
+}
+
+.image-2 {
+  z-index: 2;
+  margin-left: 45px;
+  margin-top: 20px;
+  transform: rotate(10deg);
+}
+
+.image-3 {
+  z-index: 1;
+  margin-left: 95px;
+  margin-top: 30px;
+  transform: rotate(20deg);
+}
+
+/* Hover effect on .image-1 */
+.image-1:hover ~ .image-2 {
+  margin-left: 0px;
+  margin-top: 0px;
+  transform: rotate(0deg);
+}
+
+.image-1:hover ~ .image-3 {
+  margin-left: 0px;
+  margin-top: 0px;
+  transform: rotate(0deg);
+}
+
+/*Result*/
+#results {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  border-radius: 5px;
+  display: none;
+  text-align: center;
+}
+#results a {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/*Loading Animation*/
+#loading {
+  display: none;
+  margin: 20px auto;
+  padding: 10px;
+  font-size: 18px;
+  color: #007bff;
+  text-align: center;
+}
+
+/*Footer*/
+footer {
+  color: black;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 10px;
+  text-align: center;
+  width: 100%;
+  transition: 0.3 ease;
+}
+footer a {
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+}
+footer a:hover {
+  color: #007bff;
+}
